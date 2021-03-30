@@ -1,0 +1,28 @@
+program OT;
+
+uses
+  Forms,
+  modMain in 'modMain.pas' {frmMain},
+  DataModuleMain in 'DataModuleMain.pas' {dmMain: TDataModule},
+  frmDocView in 'frmDocView.pas' {Form1},
+  SelfUpdate in 'SelfUpdate.pas' {frmSelfUpdate},
+  DocTypes in 'DocTypes.pas' {frmDocTypes},
+  DocPageNo in 'DocPageNo.pas' {frmPageNo},
+  DocPageModyfi in 'DocPageModyfi.pas' {frmDocPageModyfi},
+  PolyTypes in 'PolyTypes.pas' {frmPolyTypes};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Документооборот';
+  Application.CreateForm(TdmMain, dmMain);
+  Application.CreateForm(TfrmMain, frmMain);
+
+  Application.CreateForm(TfrmDocShow, frmDocShow);
+  Application.CreateForm(TfrmDocTypes, frmDocTypes);
+  Application.CreateForm(TfrmPageNo, frmPageNo);
+  Application.CreateForm(TfrmDocPageModyfi, frmDocPageModyfi);
+  Application.CreateForm(TfrmPolyTypes, frmPolyTypes);
+  Application.Run;
+end.

@@ -1,0 +1,77 @@
+object frmDocShow: TfrmDocShow
+  Left = 300
+  Top = 81
+  Width = 673
+  Height = 907
+  Caption = #1055#1088#1086#1089#1084#1086#1090#1088' '#1076#1086#1082#1091#1084#1077#1085#1090#1072
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object frmDocShow: TdxLayoutControl
+    Left = 0
+    Top = 0
+    Width = 665
+    Height = 873
+    Align = alClient
+    TabOrder = 0
+    AutoContentSizes = [acsWidth, acsHeight]
+    object ScrollBox1: TScrollBox
+      Left = 12
+      Top = 12
+      Width = 185
+      Height = 37
+      BorderStyle = bsNone
+      TabOrder = 0
+      object img1: TcxDBImage
+        Left = 0
+        Top = 0
+        Cursor = crHandPoint
+        Hint = #1047#1072#1082#1088#1099#1090#1100
+        Align = alClient
+        AutoSize = True
+        DataBinding.DataField = 'DocScan'
+        DataBinding.DataSource = dmMain.dsScan
+        Properties.GraphicClassName = 'TJPEGImage'
+        Properties.PopupMenuLayout.MenuItems = [pmiCopy, pmiSave]
+        Properties.ReadOnly = True
+        Properties.Stretch = True
+        Style.BorderColor = clWindowFrame
+        Style.BorderStyle = ebs3D
+        Style.HotTrack = False
+        TabOrder = 0
+        OnClick = img1Click
+        Height = 37
+        Width = 185
+      end
+    end
+    object dxlytgrpLayoutControl1Group_Root: TdxLayoutGroup
+      ShowCaption = False
+      Hidden = True
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      object frmDocShowItem1: TdxLayoutItem
+        AutoAligns = []
+        AlignHorz = ahClient
+        AlignVert = avClient
+        Caption = 'ScrollBox1'
+        ShowCaption = False
+        Control = ScrollBox1
+        ControlOptions.AutoColor = True
+      end
+    end
+  end
+  object tmrClose: TTimer
+    Enabled = False
+    Interval = 100
+    Left = 572
+    Top = 44
+  end
+end

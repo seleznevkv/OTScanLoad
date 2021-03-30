@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.012,D:\WORK\Seleznev\OTPDFNEW\OT_XE2.dproj=D:\WORK\Seleznev\OTPDFNEW\OT.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.611,D:\WORK\Seleznev\OTPDFNEW\OT_XE2.dproj=D:\WORK\Seleznev\OTPDF_FINAL\OT.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dproj,D:\wrk\OT\Sekretar\OT.dproj=D:\wrk\OT\Sekretar\SecretaryDocs.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.474,D:\Projects\OT\Sekretar\SecretaryDocs.dproj=D:\Projects\OT\Sekretar\OT.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
